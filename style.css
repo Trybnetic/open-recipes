@@ -1,16 +1,18 @@
 body {
   background-color: #ffffff;
+  margin-top: 0px; /* I hate these standard margins. */
 }
 
 #wrapper {
-  margin: 20px auto;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  margin: 30px auto;
   max-width: 1000px;
-  padding-left: 30px;
-  padding-top: 50px;
-  padding-right: 30px;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 10px;
   padding-bottom: 20px;
-  background: linear-gradient(135deg, #ffffff 0%,#f6f6f6 47%,#ededed 100%);
+  background: url(recipe_bg.png) top left repeat-y;
+  box-shadow: 8px 5px 5px -5px rgba(0,0,0,0.75);
+  background-size: contain;
 }
 
 h3 {
@@ -55,7 +57,7 @@ h3 {
 #picture > img {
   background: #fff;
   padding: 5px 5px 20px 5px;
-  /* box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
   transform: rotate(8deg);
 }
 
@@ -76,6 +78,8 @@ h3 {
     width: auto;
     margin: 0 auto;
     padding: 10px;
+    background: #fffef8;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
   }
 
   #ingredients {
@@ -91,7 +95,7 @@ h3 {
     width: 50%;
   }
 
-  #picture img {
+  #picture > img {
     transform: none;
   }
 
