@@ -19,11 +19,54 @@ h3, h2 {
   font-family: "Kaushan Script", cursive;
 }
 
+a {
+  color: #00ade3;
+  font-family: "Kalam", sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b20436;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #690220;
+  text-decoration: none;
+}
+
+#table-of-contents {
+  font-size: 1.2em;
+}
+
 #title {
   text-align: center;
   font-family: "Kaushan Script", cursive;
   padding-bottom: 20px;
 }
+
+#prev, #next, #prev a, #next a, #back, #back a {
+  font-size: 1.1em;
+  color: #00ade3;
+}
+
+#prev {
+  float: left;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+#next {
+  float: right;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+#back {
+  text-align: center;
+  padding-top: 10px;
+}
+
 
 #ingredients {
   float: left;
@@ -66,6 +109,11 @@ h3, h2 {
   clear: both;
   font-family: "Kalam", sans-serif;
   line-height: 1;
+}
+
+ul {
+  list-style-type: square;
+  color: #00ade3;
 }
 
 #comment {
