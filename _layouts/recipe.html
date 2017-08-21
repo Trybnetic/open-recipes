@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang={{site.language}}>
   {% include head.html %}
   <body>
     <div id="wrapper">
+      {% include nav.html %}
       <h2 id="title">{{page.title}}</h2>
       {% if content contains "<!-- ad -->" %}
         <div id="ingredients">
-          <h3>Zutaten für {{page.persons}} Personen:</h3>
+          {% if site.language == "de" %}
+            <h3>Zutaten für {{page.persons}} Personen:</h3>
+          {% elsif site.language == "en" %}
+            <h3>Ingredients for {{page.persons}} persons:</h3>
+          {% endif %}
           {{ content | split:"<!-- ad -->" | first }}
         </div> <!-- /ingredients -->
         <div id="picture">
@@ -18,9 +23,14 @@
         </div> <!-- /picture -->
 
         <div id="steps">
-          <h3>Zubereitung:</h3>
+          {% if site.language == "de" %}
+            <h3>Zubereitung:</h3>
+          {% elsif site.language == "en" %}
+            <h3>Preparation:</h3>
+          {% endif %}
           {{ content | split:"<!-- ad -->" | last }}
         </div> <!-- /steps -->
+
       {% else %}
         {{ content }}
       {% endif %}
@@ -29,6 +39,15 @@
         <p>Blindtexte können bei übermäßigem Verzehr abführend wirken.</p>
       </div> -->
      <!-- /comment -->
+     <div id="back">
+       <a href="{{site.baseurl}}/">
+         {% if site.language == "de" %}
+           zurück zur Übersicht
+         {% elsif site.language == "en" %}
+           back to index
+         {% endif %}
+       </a>
+     </div> <!-- /back -->
     </div> <!-- /wrapper -->
   </body>
 </html>

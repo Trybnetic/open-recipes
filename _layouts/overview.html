@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang={{site.language}}>
   {% include head.html %}
   <body>
     <div id="wrapper">
       <h1 id="title">{{page.title}}</h1>
       <div id="table-of-contents">
-        {% for recipe in site.posts %}
-            <p><a href="{{recipe.url}}">{{recipe.title}}</a></p>
-        {% endfor %}
+          <ul id="toc">
+            {% for recipe in site.posts reversed %}
+                <li><a href="{{recipe.url}}">{{recipe.title}}</a></li>
+            {% endfor %}
+          </ul>
       </div> <!-- /table-of-contents -->
     </div> <!-- /wrapper -->
   </body>

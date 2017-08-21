@@ -1,0 +1,46 @@
+{% if page.previous %}
+  <div id="prev">
+    &#x21FD;&nbsp;
+    <a href="{{page.previous.url}}">
+      {% if site.language == "de" %}
+        vorherig
+      {% elsif site.language == "en" %}
+        previous
+      {% endif %}
+    </a>
+  </div>
+{% else %}
+  <div id="prev" style="visibility:hidden">
+    &#x21FD;&nbsp;
+    <a href="{{page.previous.url}}">
+      {% if site.language == "de" %}
+        vorherig
+      {% elsif site.language == "en" %}
+        previous
+      {% endif %}
+    </a>
+  </div>
+{% endif %}
+{% if page.next %}
+  <div id="next">
+    <a href="{{page.next.url}}">
+      {% if site.language == "de" %}
+        nächstes
+      {% elsif site.language == "en" %}
+        next
+      {% endif %}
+    </a>
+    &nbsp;&#x21FE;
+  </div>
+{% else %}
+  <div id="next" style="visibility:hidden">
+    &#x21FD;&nbsp;
+    <a href="{{page.next.url}}">
+      {% if site.language == "de" %}
+        nächstes
+      {% elsif site.language == "en" %}
+        next
+      {% endif %}
+    </a>
+  </div>
+{% endif %}
