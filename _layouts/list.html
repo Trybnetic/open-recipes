@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="de">
+  {% include head.html %}
+  <body>
+    <div id="wrapper">
+      <h1 id="title">{{page.title}}</h1>
+      <div id="table-of-contents">
+        {% for recipe in site.posts %}
+            <p><a href="{{recipe.url}}">{{recipe.title}}</a></p>
+        {% endfor %}
+      </div> <!-- /table-of-contents -->
+    </div> <!-- /wrapper -->
+  </body>
+</html>
