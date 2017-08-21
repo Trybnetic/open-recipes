@@ -2,7 +2,7 @@
 layout: recipe
 title: Blindtext an CSS-Ragout
 persons: 4
-image:
+image: kaiserschmarrn.jpg
 ---
 
 <!-- Zutaten -->
