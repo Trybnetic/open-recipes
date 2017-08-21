@@ -89,6 +89,10 @@ h3 {
     padding-bottom: 10px;
   }
 
+  #ingredients > table {
+    width: 100%;
+  }
+
   #picture {
     float: none;
     display: block;
