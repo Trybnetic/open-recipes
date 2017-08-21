@@ -1,4 +1,5 @@
 # Open Recipes
+[![](https://img.shields.io/github/license/Trybnetic/open-recipes.svg)](https://github.com/Trybnetic/open-recipes/blob/master/LICENSE.txt)  
 Open Recipes is a simple jekyll theme to organize and host your favorite recipes.  
 
 ## How to use
