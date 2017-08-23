@@ -69,6 +69,12 @@ a:visited {
   padding-top: 10px;
 }
 
+#logo {
+  min-height: 90px;
+  max-height: 140px;
+  background: url(openrecipes_logo.png) no-repeat center;
+  background-size: contain;
+}
 
 #ingredients {
   float: left;
