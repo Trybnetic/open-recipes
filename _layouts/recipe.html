@@ -16,7 +16,7 @@
         </div> <!-- /ingredients -->
         <div id="picture">
           {% if page.image %}
-            <img src="{{site.baseurl}}/assets/images/{{page.image}}" alt="Rezeptbild"/>
+            <img src="{{site.url}}{{site.baseurl}}/assets/images/{{page.image}}" alt="Rezeptbild"/>
           {% else %}
             <img src="https://dummyimage.com/300x200/de1bde/ffffff.png" alt="Rezeptbild"/>
           {% endif %}
@@ -40,7 +40,7 @@
       </div> -->
      <!-- /comment -->
      <div id="back">
-       <a href="{{site.baseurl}}/">
+       <a href="{{site.url}}{{site.baseurl}}/">
          {% if site.language == "de" %}
            zurück zur Übersicht
          {% elsif site.language == "en" %}
