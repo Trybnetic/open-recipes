@@ -3,6 +3,7 @@ layout: recipe
 title: Blindtext an CSS-Ragout
 persons: 4
 image: kaiserschmarrn.jpg
+tags: easy fast
 ---
 
 <!-- Zutaten -->
