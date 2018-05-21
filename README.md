@@ -1,6 +1,7 @@
 ![logo](logo.png)
 
 [![Build Status](https://travis-ci.org/Trybnetic/open-recipes.svg?branch=master)](https://travis-ci.com/Trybnetic/open-recipes)
+[![Depfu](https://badges.depfu.com/badges/e601291ebedcf0d3a98d44c90ff31740/overview.svg)](https://depfu.com/github/Trybnetic/open-recipes)
 [![License](https://img.shields.io/github/license/Trybnetic/open-recipes.svg)](https://github.com/Trybnetic/open-recipes/blob/master/LICENSE.txt)  
 
 
