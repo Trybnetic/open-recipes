@@ -3,6 +3,7 @@ layout: recipe
 title: Blindtext an HTML-Ragout
 persons: 4
 image:
+categories: vegetarian
 ---
 
 <!-- Zutaten -->
